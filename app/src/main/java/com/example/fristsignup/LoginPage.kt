@@ -10,6 +10,8 @@ import androidx.core.view.WindowInsetsCompat
 
 class LoginPage : AppCompatActivity() {
     private lateinit var RegesterBtn: Button
+    private lateinit var loginBtn: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +28,13 @@ class LoginPage : AppCompatActivity() {
             val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
         }
+        loginBtn = findViewById(R.id.btnLogin)
+        // ✅ Correct Intent usage
+        loginBtn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
 
+        }
     }
-}
+    }
