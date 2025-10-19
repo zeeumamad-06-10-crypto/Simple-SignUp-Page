@@ -25,4 +25,12 @@
         android:layout_marginHorizontal="30.dp"
         android:text="logout"
         />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :Zeeum Siraji\n Id : 10"
+        android:textSize="40.sp"
+        />
 </LinearLayout>
